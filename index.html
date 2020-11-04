@@ -3,81 +3,45 @@
     <head>
         <link rel="Icon" href="FavIcon.png" type="image/gif" sizes="16x16">
         <title> All about me! </title>
+        <link rel="stylesheet" type="text/css" href="stylesheet.css">
+
+
         <style>
-
-            /* I set the all h1's to be the color blue. */
-            h1 {color:rgb(9, 7, 153);}
-            /* I set the font size to 20px so I can fit my stext in smaller spaces. */
-            p {font-size: 20px;}
-            /* I set the background to what ever that is. I also set it not to repeat so that the image doens't show up more than one time as the background. */
-            body { 
-                background-repeat: no-repeat;
-                background-image: url("pexels-anni-roenkae-2457317.jpg")
-                }
-            /* I set the length of the standard paragraph to be only 750px to move it and make it small enought to fit the picture to come.*/
-            p {
+            #COMPUTER_CHIP {
                 width: 750px;
-                }
-            /* I set the width of the picture to 500px and then set the position realitive so I could move the picture left and to the side of where it should be. I then have to move all other texts up to replace where the picture went because I didn't use the layout code.  */
-            #COMPUTER_CHIP { 
-                width: 500px; 
-                position: relative; 
-                left: 775px; 
-                bottom: 200px;
+                padding: 20px 20px;
             }
-            /* This puts all classes below the image up 290px, because I am using the position realtive to bottom to move the picture instead of using the layout code. */
-            .Below {
-                position: relative;
-            bottom: 290px;
-            }
-            /* This block of code from div and @keyframe make a block behind the the first paragraph tht changes the color as the time of the animation goes on. It stays still and repeats for ever. It goes from red to blue to yellow to green to red again. The cycle is on a 10 second timer. The <div> is on a block of paragraph. */
-            div {
-                width: 750px;
-                height: 170px;
-                background-color: blue;
-                position: relative;
-                animation-name: awesome;
-                animation-duration: 10s;
-                animation-iteration-count: infinite;
-            }
-
-            @keyframes awesome {  
-                 0%   {background-color:red;}
-                 25%  {background-color: blue;}
-                 50%  {background-color:rgb(217, 255, 0);}
-                 75%  {background-color: green;}
-                 100% {background-color:red;} 
-            }
-
-
         </style>
+
     </head>
 
     <meta charset="UTF-8">
 
     <body> 
-        <!-- The first header is colored blue. -->
-        <h1>All about Drew Faulstich!</h1>
-        <h3> Who is Drew Faulstich?</h3>
-        <!-- The paragraph below has the animation behind it that is why it is in the <div> section.-->
-        <div><p>Hello! My name is <em>Drew Faulstich</em>. I am a student at Plymouth Highshool in Plymouth Indiana. I am in intro to computer science principles! I am taking this class because I would like to persue computer engineering. ALthough I want to go on the hardware side of things. I want to learn how to code because I figure that I will have to learn alot of this anyways during colledge and it is best to have the beginning all sorted out. Not only that but I am going to take the AP test so hopefully I will get college credit for this class so I can even skip a class during college. </p></div>
-        <!-- This is the computer chip picture. -->
-        <img id="COMPUTER_CHIP" src="feature-program-computer-engineering.jpg">
+        <div class=title_bar>
+            <h1>All about Drew Faulstich!</h1>
+        </div>
+       
+        
+            <div class="navi_bar">
+                <div class="navi_links">
+            <a href="index.html" calss="active">Home</a>
+            <a href="about.html">About Me</a>
+                </div>
+            </div>
+            <div class="row">
+                <div class="column40">
+                    <h2> Who is Drew Faulstich?</h3>
+        
+                    <!-- The paragraph below has the animation behind it that is why it is in the <div> section.-->
+        
+                    <p>Hello! My name is <em>Drew Faulstich</em>. I am a student at Plymouth Highshool in Plymouth Indiana. I am in intro to computer science principles! I am taking this class because I would like to persue computer engineering. Although I want to go on the hardware side of things. I want to learn how to code because I figure that I will have to learn alot of this anyways during colledge and it is best to have the beginning all sorted out. Not only that but I am going to take the AP test so hopefully I will get college credit for this class so I can even skip a class during college. </p>
+                </div>
+                <div class="column60">
+            <img id="COMPUTER_CHIP" src="feature-program-computer-engineering.jpg">
+        </div>
         <!-- All Things below this need to have the class="Below" because of the formating I used. Instead of using layout of css I used height and width along with changing the position, making it realitive to what I put.-->
-        <h3 class="Below">My Intrests</h3>
-
-        <p class="Below"> I am very intrested in computers. Ever since I built my first computer I have been fasinated and always wanted to learn how they work and how there built. Thats one of the reasons why I want ot go into <strong>computer engineering</strong>. I am also really into playin board games and table top games. One of my all time favorite games is dungeons and dragons! I love to play it with friends and have all the rediculous and hilarious stories.  </p>
-
-        <h2 class="Below">Top 5 Hobbies</h2>
-        <ol class="Below">
-        <li>Learn about Computers</li>
-        <li>Play Dungeons and Dragons</li>
-        <li>Hangout with Friends</li>
-        <li>Play Video Games</li>
-        <li>Video Editing</li>
-        </ol>
-
-        </ul>
+        </div>
         
     </body>
 </html> 
