@@ -1,7 +1,9 @@
+/* This makes all of the text go all the way left to the page */
 body {
   margin: 0px;
 }
 
+/* This is the div tag for the title bar. Making it have a space background. it aligns the text senter and makes the border black. It also gives it a bit of padding left and right.*/
 .title_bar {
   background-image: url("Space.jpg");
   margin: auto;
@@ -12,17 +14,20 @@ body {
   border: 30px; 
 }
 
+/* This is the navigation bar div tag. Making its background block black and overflow hidden. */
 .navi_bar { 
   background-color: rgb(0, 0, 0);
   display: block;
   overflow: hidden;
 }
 
+/* This is the div tag meant for inside the navigation bar. This makes the width of the text to fill to 100% of the screen.*/
 .navi_links{
   width: 100%;
   overflow: hidden; 
 }
 
+/* This makes the naviation bar align the text center and give the text decoration none (making it have no underline.) it will float to the left, so the words align from the left side to the right. It gives the text wich color and 20px font size. It also gives it some padding up and down.*/
 .navi_bar a{
   display: block;
   text-align: center;
@@ -33,48 +38,53 @@ body {
   color: white;
 }
 
+/* This makes it so that the place we hover over inverts the text color and background color of the navigation bar. */
 .navi_links a:hover{
   background-color:white;
   color: black;
   
 }
 
-.active{
+/* This doesn't really work, but I also didn't really like it anyways. It is supposed to make the page your own navi bar to change colors. */
+.active {
   background-color: gray;
   color: blue;
 }
 
-
+/* This creates the rows that the columns will fall into so we can change the layout of our page. */
 .row {
   display: flex;
-
 }
-            
+
+ /*This is column that takes up 40% of the screen. Gives us some padding. */           
 .column40{
   flex: 4;
   padding: 0px 20px;
   margin: auto;
 }
 
+ /*This is column that takes up 50% of the screen. Gives us some padding. */  
 .column50{
   flex: 5;
   padding: 0px 20px;
   margin: auto;
 }
 
+ /*This is column that takes up 60% of the screen. Gives us some padding. */  
 .column60{
   flex: 6;
   padding: 0px 20px;
   margin: auto;
 }
 
+ /*This is column that takes up 100% of the screen. Gives us some padding. */  
 .column100{
   flex: 10;
   padding: 0px 20px;
   margin: auto;
 }
 
-
+ /* This gives all our images a display width and a minimum display width of 500px.*/  
 img { 
 display: block;
 width: 90%; 
@@ -82,7 +92,7 @@ min-width: 500px;
 margin: auto;}
 
 
-            /* I set the all h1's to be the color blue. */
+            /* I set the all h1's to be the color white. */
             h1 {color:rgb(255, 255, 255);}
             h2 {font-size: 50px;
             text-align: center;
